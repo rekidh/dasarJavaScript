@@ -56,29 +56,18 @@ TIPE DATA BOOLEAN
 
 
   - CONTOH PENGUNAAN
--
-```
-- `document.writeln("reki \n desma haldi")`   <= ENTER
 
-``` 
- - reki
- - desma haldi
 
-```
-- `document.writeln("reki\\desma haldi")`     <= sles
-```
-reki\desma haldi
+  - `document.writeln("reki \n desma haldi")`  <= ENTER
+     - reki
+     - desma haldi
 
-```
+  - `document.writeln("reki\\desma haldi")`     <= sles
+     - reki\desma haldi
 - `document.writeln("reki\" desma haldi") `   <= kutip "
--
-```
-
-reki"desma haldi
-```
+     - reki"desma haldi
 - `document.writeln("reki\'desma haldi")`     <= kutip '
-```
-reki'desma haldi
+     - reki'desma haldi
 
 
 
