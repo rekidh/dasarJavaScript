@@ -11,60 +11,71 @@
 
  TIPE DATA NUMBER JAVASCRIPT
   - Javascript hanya mendukung satau tipe data Number berupa bilangan bulat atau bilangan desimal
-      - Bilangan BULAT 10 , 45 ,89 dll
-      - BILANGAN DESIMAL 10.5 ,7.2 ,4.4 , 3.2 dll
+      - Bilangan BULAT  ` 10 , 45 ,89` dll
+      - BILANGAN DESIMAL `10.5 ,7.2 ,4.4 , 3.2` dll
   - untuk membuat Number di javacript langsung saja ditulis tampa tanda petik
-  CONTOH:
-    - 10 , 10.5 , 100   <= adalah NUMBER
-    - "10","10.5","100"  <= ini adalah STRING
+  - CONTOH:
+    - `10 , 10.5 , 100 `  <= adalah NUMBER
+    - `"10","10.5","100"`  <= ini adalah STRING
   
   NUMBER NOTATION 
   - javascript mendukung number notation, default nya adalah basis 10
   - javascript juga mendukung BINARY,HEXADECIMAL dan OCTAL
-    - HEXADESIMAL   : 0xFF
-    - BINARY : 0b10101
-    - OCTAL :0o10
+    - `HEXADESIMAL   : 0xFF`
+    - `BINARY : 0b10101`
+    - `OCTAL :0o10`
 
 
 
 TIPE DATA BOOLEAN
-- TIPE DATA boolean adalah tipe data yang berisikan nilai kebenaran
-artinya hanya ada dua nilai BENAR atau SALAH (TRUE atau FALSE)
+- TIPE DATA `boolean` adalah tipe data yang berisikan nilai kebenaran
+  artinya hanya ada dua nilai `BENAR` atau `SALAH` (`TRUE` atau `FALSE`)
     - walau tipe data boolean murapakan tipa data yang sangat sederhana tapi tipe data ini sangat banya di gunakan di bebrapa fitur program
 
  TIPE DATA STRING
-- tipe data string di tandai dengan tand petik "PETIK DUA" dan 'PETIK SATU'
+- tipe data string di tandai dengan tand petik `"PETIK DUA"` dan `'PETIK SATU'`
 - nilai nya boleh kosong atau banyak karakter
 
-- MENAMBAH atau menggabngkan STRING biasanya mengunkan tanda + (plus)
+- MENAMBAH atau menggabngkan `STRING` biasanya mengunkan tanda  ` + `(plus)
 
 
  ESCAPE SEQUENCE
 - javascript mendukung escape sequence di string. escape sequence merupakan karakter 
-  khusus seperti TAB, ENTER , kutip dua dll
-  ```---------------------------
+  khusus seperti `TAB`,` ENTER` , `kutip` dua ` dll`
+  ```
+  ---------------------------
   |    \n       | ENTER     |
   ---------------------------
   |    \t       | TAB       |
   |    \'       | (kutip ') |
   |    \"       | (kutip ") |
   |    \\       | (sles \)  |
-  ---------------------------```
+  ---------------------------
+
+```
 
   - CONTOH PENGUNAAN
 - ` document.writeln("reki \n desma haldi")`     <= ENTER
-reki
-desma haldi
-
+-
+  ``` 
+  reki
+  desma haldi
+  ```
 - `document.writeln("reki\\desma haldi")`     <= sles
+- 
+```
 reki\desma haldi
-
+```
 - `document.writeln("reki\" desma haldi") `   <= kutip "
+-
+```
 reki"desma haldi
-
+```
 - `document.writeln("reki\'desma haldi")`     <= kutip '
+-
+```
 reki'desma haldi
-
+```
 
 
 
@@ -73,7 +84,7 @@ VARIABEL
 - variabel adalah tempat/wadah untuk menampung nilai
 
   - PROBLEM KALAU TIDA MENGGUNAKAN VARIABEL
-  coba rubah nilai yang ada ("reki \n desma haldi") menjadi (" reki desma")
+  - coba rubah nilai yang ada `document.writeln("reki \n desma haldi")` menjadi `(" reki desma")`
   hal ini akan menjadi sangat mmerepotkan bukan 
 
 ```
@@ -84,7 +95,7 @@ VARIABEL
   document.writeln("reki \n desma haldi") 
   document.writeln("reki \n desma haldi") X100
 
-  ```
+```
 
 - coba kita gunakan variabel 
 ```
@@ -94,8 +105,8 @@ VARIABEL
   document.writeln(reki) 
   document.writeln(reki) 
   document.writeln(reki) 
-  document.writeln(reki) X1001 
-  ```
+  document.writeln(reki)  // X1001 
+```
 
 - kalau kita ingin merubah merubah nilai yang kita tulis
   kita cukup merubah isi dari var nya menjadi nilai baru yang kita inginkan
@@ -103,7 +114,7 @@ VARIABEL
 - `var = " reki "`
 -  maka nilai yang ada pada 
     `document.writeln(reki) `
-- akan berubah semua tampa kita menulis kan nya satu per satu
+- akan berubah semua tampa kita menuliskannya satu per satu
 
 
 VARIABEL DI ES5 
@@ -138,9 +149,10 @@ OPERATOR ARITMATIKA
  - code operator aritmatika
 
 ``` 
-let result = 1+2 ;/ 3
+let result = 1+2 ;    // 3
 document.writeln("<p> 1+2 = "+result+"</p>");
 let originalResult= result;
+
 result=result-1;       //<= result ini di dikler lagi menjadi 3-1
 document.writeln(`${originalResul}-1=${result}`) 
 ```
@@ -175,6 +187,8 @@ di gunakan untuk operasi satu data saja
 |    ++        |  Increment,menaikan 1 angka  |
 |    --        | Decrement,menurunkan 1 angka |
   -----------------------------------------------
+```
+```
 let result= +1;
 document.writeln("<p>"+result+"</p>");
 result--;   //<= result = result-1; atau result -=1; hasil 0
@@ -277,7 +291,8 @@ Untuk pengunaan string template kita mengunakan `backtick`
 var world="world";
 contoh : document.innerHTML=`<p>hello${world}</p>`;
 
-hal diatas sama saja seperti di bawah ini
+//hal diatas sama saja seperti di bawah ini
+
 document.innerHTML="<p>hello"+world+"</p>"
 ```
    
