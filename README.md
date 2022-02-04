@@ -1,6 +1,6 @@
  TITIK COMA OPSIONAL DI JAVA SCRIPT
 - agar kode lebih konsisten lebih baik pilih pakai atau tidak
-- SAYA MENYARANKAN ANDA AGAR MENGUNAKAN TITIK KOMA
+- `SAYA MENYARANKAN ANDA AGAR MENGUNAKAN TITIK KOMA`
 
 - `//KOMENTAR DI JAVACRIPT`   <=  ini adlah inline komen
 
