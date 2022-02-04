@@ -22,8 +22,8 @@
   - javascript mendukung number notation, default nya adalah basis 10
   javascript juga mendukung BINARY,HEXADECIMAL dan OCTAL
     - HEXADESIMAL   : 0xFF
-    -BINARY : 0b10101
-    -OCTAL :0o10
+    - BINARY : 0b10101
+    - OCTAL :0o10
 
 
 
@@ -51,17 +51,17 @@ artinya hanya ada dua nilai BENAR atau SALAH (TRUE atau FALSE)
   |    \\       | (sles \)  |
   ---------------------------
   - CONTOH PENGUNAAN
-  document.writeln("reki \n desma haldi")     <= ENTER
+  ` document.writeln("reki \n desma haldi")`     <= ENTER
   reki
   desma haldi
 
-  document.writeln("reki\\desma haldi")     <= sles
+  `document.writeln("reki\\desma haldi")`     <= sles
   reki\desma haldi
 
-  document.writeln("reki\" desma haldi")    <= kutip "
+  `document.writeln("reki\" desma haldi") `   <= kutip "
   reki"desma haldi
 
-  document.writeln("reki\'desma haldi")     <= kutip '
+  `document.writeln("reki\'desma haldi")`     <= kutip '
   reki'desma haldi
 
 
@@ -74,29 +74,29 @@ artinya hanya ada dua nilai BENAR atau SALAH (TRUE atau FALSE)
   - PROBLEM KALAU TIDA MENGGUNAKAN VARIABEL
   coba rubah nilai yang ada ("reki \n desma haldi") menjadi (" reki desma")
   hal ini akan menjadi sangat mmerepotkan bukan 
-
-  document.writeln("reki \n desma haldi") 
-  document.writeln("reki \n desma haldi") 
-  document.writeln("reki \n desma haldi") 
-  document.writeln("reki \n desma haldi") 
-  document.writeln("reki \n desma haldi") 
-  document.writeln("reki \n desma haldi") X100
+`
+  `document.writeln("reki \n desma haldi") `
+  `document.writeln("reki \n desma haldi")`
+  `document.writeln("reki \n desma haldi")` 
+  `document.writeln("reki \n desma haldi")` 
+  `document.writeln("reki \n desma haldi")` 
+  `document.writeln("reki \n desma haldi")` X100`
 
   coba kita gunakan variabel 
-  var reki ="reki \n desma haldi"
+``var reki ="reki \n desma haldi"`
 
-  document.writeln(reki)
-  document.writeln(reki) 
-  document.writeln(reki) 
-  document.writeln(reki) 
-  document.writeln(reki) X1001 
+  `document.writeln(reki)`
+  `document.writeln(reki) `
+  `document.writeln(reki) `
+  `document.writeln(reki) `
+  `document.writeln(reki)` X1001 `
 
   kalau kita ingin merubah merubah nilai yang kita tulis
   kita cukup merubah isi dari var nya menjadi nilai baru yang kita inginkan
   sekarang kita ingin merubah nilai menjadi ("reki") kita cukup menulikan
-  var = " reki "
+  `var = " reki "`
   maka nilai yang ada pada 
-    document.writeln(reki) 
+    `document.writeln(reki) `
     akan berubah semua tampa kita menulis kan nya satu per satu
 
 
@@ -116,30 +116,30 @@ const => di gunakan pada ruang lingkup yang lebih besar dan nilai yang di masuka
 - DLL
 
 //OPERATOR ARITMATIKA
-  -----------------------------------
-|  Operator    | Keretangan         |
-  -------------------------------------
-|     +        | Pertambahan        |
-|     -        | Pengurangan        |
-|     *        | Perkalian          |
-|     **       | Exponensial 2²     |  <= berarti perkalian berulang / perpangkatan 2²
-|     /        | Pembagian          |
-|     %        | modulus/ sisa bagi |
-  -------------------------------------
+``-----------------------------------`
+`|  Operator    | Keretangan         |`
+`-------------------------------------`
+`|     +        | Pertambahan        |`
+`|     -        | Pengurangan        |`
+`|     *        | Perkalian          |`
+`|     **       | Exponensial 2²     | ` <= berarti perkalian berulang / perpangkatan 2²
+`|     /        | Pembagian          |`
+`|     %        | modulus/ sisa bagi |`
+`------------------------------------ ` `
 
 //  code operator aritmatika
 
-let result = 1+2 ;/ 3
-document.writeln("<p> 1+2 = "+result+"</p>");
-let originalResult= result;
-result=result-1;        //<= result ini di dikler lagi menjadi 3-1
-document.writeln(`${originalResul}-1=${result})
+`let result = 1+2 ;`/ 3
+`document.writeln("<p> 1+2 = "+result+"</p>");`
+`let originalResult= result;`
+`result=result-1;`        //<= result ini di dikler lagi menjadi 3-1
+`document.writeln(`${originalResul}-1=${result}`) `
 
 
 // OPERATOR AUGMENTED ASSIGNMENTS
 Digunakan untuk manipulasi Operasi Untuk diri nya sendri
 atau jika suatu variabel ingin di *,/,+,- dan di tampung lagi(atau memasukan ulang nilai nya ke variabel itu maka ini lah jawaban nya)
-  -------------------------------------------------------
+```-------------------------------------------------------
 |  Operator           | Operator Augmented Assignments |
   --------------------------------------------------------
 | result=result +10   |    result += 10                |
@@ -148,7 +148,7 @@ atau jika suatu variabel ingin di *,/,+,- dan di tampung lagi(atau memasukan ula
 | result=result **10  |    result **= 10               |
 | result=result /10   |    result /= 10                |
 | result=result %10   |    result %= 10                |
-  --------------------------------------------------------
+  ------------------------------------------------------```
 
 
 // OPERATOR UNARY
