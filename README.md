@@ -42,7 +42,7 @@ TIPE DATA BOOLEAN
  ESCAPE SEQUENCE
 - javascript mendukung escape sequence di string. escape sequence merupakan karakter 
   khusus seperti `TAB`,` ENTER` , `kutip` dua ` dll`
-  ```
+```
   ---------------------------
   |    \n       | ENTER     |
   ---------------------------
@@ -55,7 +55,7 @@ TIPE DATA BOOLEAN
 ```
 
 
-  - CONTOH PENGUNAAN
+CONTOH PENGUNAAN
 
 
   - `document.writeln("reki \n desma haldi")`  <= ENTER
@@ -64,9 +64,9 @@ TIPE DATA BOOLEAN
 
   - `document.writeln("reki\\desma haldi")`     <= sles
      - reki\desma haldi
-- `document.writeln("reki\" desma haldi") `   <= kutip "
+  - `document.writeln("reki\" desma haldi") `   <= kutip "
      - reki"desma haldi
-- `document.writeln("reki\'desma haldi")`     <= kutip '
+  - `document.writeln("reki\'desma haldi")`     <= kutip '
      - reki'desma haldi
 
 
