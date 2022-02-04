@@ -135,7 +135,7 @@ OPERATOR ARITMATIKA
 ------------------------------------ 
 ```
 
- code operator aritmatika
+ - code operator aritmatika
 
 ``` 
 let result = 1+2 ;/ 3
@@ -146,8 +146,8 @@ document.writeln(`${originalResul}-1=${result}`)
 ```
 
 
-// OPERATOR AUGMENTED ASSIGNMENTS
-Digunakan untuk manipulasi Operasi Untuk diri nya sendri
+OPERATOR AUGMENTED ASSIGNMENTS
+- Digunakan untuk manipulasi Operasi Untuk diri nya sendri
 atau jika suatu variabel ingin di *,/,+,- dan di tampung lagi(atau memasukan ulang nilai nya ke variabel itu maka ini lah jawaban nya)
 
 ```
@@ -184,7 +184,7 @@ result++; //<= result +1; atau result +=1; hasil 1
 result = -result ;  //<= nilai var result di ubah menjadi negatif result 
 ```
 
-// OPERATOR PERBANDINGAN
+OPERATOR PERBANDINGAN
 
 - Operator Perbandingan adalah Operator untuk membandingkan dua buah data
 Opersi yang menghasilakan nilai Boolean (benar/salah)
@@ -234,7 +234,7 @@ hasil dari operator logika adalah boolean lagi
 --------------------------------------
 ```
 
-operator TIPE UNARY
+- operator TIPE UNARY
 
 ```
 ------------------------------------------------
