@@ -153,7 +153,7 @@ document.writeln(`${originalResul}-1=${result}`)
 
 OPERATOR AUGMENTED ASSIGNMENTS
 - Digunakan untuk manipulasi Operasi Untuk diri nya sendri
-atau jika suatu variabel ingin di *,/,+,- dan di tampung lagi(atau memasukan ulang nilai nya ke variabel itu maka ini lah jawaban nya)
+atau jika suatu variabel ingin di `*`,`/`,`+`,`-` dan di tampung lagi(atau memasukan ulang nilai nya ke variabel itu maka ini lah jawaban nya)
 
 ```
 -------------------------------------------------------
@@ -252,7 +252,7 @@ hasil dari operator logika adalah boolean lagi
 |   !       |   false | dibalik menjadi TRUE   |  
 ------------------------------------------------
 ```
-- CONTOH PEGUNAAN
+   - CONTOH PEGUNAAN
 ```
   const nilaiUjian = 70;
   const nilaiAbsen = 70;
