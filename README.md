@@ -54,28 +54,32 @@ TIPE DATA BOOLEAN
 
 ```
 
+
   - CONTOH PENGUNAAN
-- ` document.writeln("reki \n desma haldi")`     <= ENTER
 -
-  ``` 
-  reki
-  desma haldi
-  ```
+```
+- `document.writeln("reki \n desma haldi")`   <= ENTER
+
+``` 
+ - reki
+ - desma haldi
+
+```
 - `document.writeln("reki\\desma haldi")`     <= sles
-- 
 ```
 reki\desma haldi
+
 ```
 - `document.writeln("reki\" desma haldi") `   <= kutip "
 -
 ```
+
 reki"desma haldi
 ```
 - `document.writeln("reki\'desma haldi")`     <= kutip '
--
 ```
 reki'desma haldi
-```
+
 
 
 
@@ -188,6 +192,7 @@ di gunakan untuk operasi satu data saja
 |    --        | Decrement,menurunkan 1 angka |
   -----------------------------------------------
 ```
+-
 ```
 let result= +1;
 document.writeln("<p>"+result+"</p>");
