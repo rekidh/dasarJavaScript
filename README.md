@@ -1,24 +1,23 @@
  TITIK COMA OPSIONAL DI JAVA SCRIPT
 - agar kode lebih konsisten lebih baik pilih pakai atau tidak
-- `SAYA MENYARANKAN ANDA AGAR MENGUNAKAN TITIK KOMA`
+- Saya merekomendasikan anda mengunakan `;`
 
-- `//KOMENTAR DI JAVACRIPT`   <=  ini adlah inline komen
-
+- `//comment di javaScript`   <=  ini adlah inline komen
 - `/*
-  DOUBEL LINE KOMENTAR
+  double line comment
 */`
 
 
- TIPE DATA NUMBER JAVASCRIPT
+TIPE DATA NUMBER JAVASCRIPT
   - Javascript hanya mendukung satau tipe data Number berupa bilangan bulat atau bilangan desimal
-      - Bilangan BULAT  ` 10 , 45 ,89` dll
-      - BILANGAN DESIMAL `10.5 ,7.2 ,4.4 , 3.2` dll
+      - Bilangan bulat  ` 10 , 45 ,89` dll
+      - Bilangan decimal `10.5 ,7.2 ,4.4 , 3.2` dll
   - untuk membuat Number di javacript langsung saja ditulis tampa tanda petik
-  - CONTOH:
+  - contoh:
     - `10 , 10.5 , 100 `  <= adalah NUMBER
     - `"10","10.5","100"`  <= ini adalah STRING
   
-  NUMBER NOTATION 
+NUMBER NOTATION 
   - javascript mendukung number notation, default nya adalah basis 10
   - javascript juga mendukung BINARY,HEXADECIMAL dan OCTAL
     - `HEXADESIMAL   : 0xFF`
@@ -30,13 +29,12 @@
 TIPE DATA BOOLEAN
 - TIPE DATA `boolean` adalah tipe data yang berisikan nilai kebenaran
   artinya hanya ada dua nilai `BENAR` atau `SALAH` (`TRUE` atau `FALSE`)
-    - walau tipe data boolean murapakan tipa data yang sangat sederhana tapi tipe data ini sangat banya di gunakan di bebrapa fitur program
+- walau tipe data boolean murapakan tipa data yang sangat sederhana tapi tipe data ini sangat banya di gunakan di bebrapa fitur program
 
  TIPE DATA STRING
 - tipe data string di tandai dengan tand petik `"PETIK DUA"` dan `'PETIK SATU'`
 - nilai nya boleh kosong atau banyak karakter
-
-- MENAMBAH atau menggabngkan `STRING` biasanya mengunkan tanda  ` + `(plus)
+- `MENAMBAH` atau menggabngkan `STRING` biasanya mengunkan tanda  ` + `(plus)
 
 
  ESCAPE SEQUENCE
@@ -56,26 +54,21 @@ TIPE DATA BOOLEAN
 
 
 CONTOH PENGUNAAN
+- `document.writeln("reki \n desma haldi")`  <= ENTER
+   - reki
+   - desma haldi
 
-
-  - `document.writeln("reki \n desma haldi")`  <= ENTER
-     - reki
-     - desma haldi
-
-  - `document.writeln("reki\\desma haldi")`     <= sles
-     - reki\desma haldi
-  - `document.writeln("reki\" desma haldi") `   <= kutip "
-     - reki"desma haldi
-  - `document.writeln("reki\'desma haldi")`     <= kutip '
-     - reki'desma haldi
-
-
+- `document.writeln("reki\\desma haldi")`     <= sles
+   - reki\desma haldi
+- `document.writeln("reki\" desma haldi") `   <= kutip "
+   - reki"desma haldi
+- `document.writeln("reki\'desma haldi")`     <= kutip '
+   - reki'desma haldi
 
 
 VARIABEL
 
 - variabel adalah tempat/wadah untuk menampung nilai
-
   - PROBLEM KALAU TIDA MENGGUNAKAN VARIABEL
   - coba rubah nilai yang ada `document.writeln("reki \n desma haldi")` menjadi `(" reki desma")`
   hal ini akan menjadi sangat mmerepotkan bukan 
@@ -105,8 +98,7 @@ VARIABEL
   kita cukup merubah isi dari var nya menjadi nilai baru yang kita inginkan
   sekarang kita ingin merubah nilai menjadi ("reki") kita cukup menulikan
 - `var = " reki "`
--  maka nilai yang ada pada 
-    `document.writeln(reki) `
+-  maka nilai yang ada pada `document.writeln(reki) `
 - akan berubah semua tampa kita menuliskannya satu per satu
 
 
@@ -118,7 +110,7 @@ VARIABEL DI ES5
   - `const` => di gunakan pada ruang lingkup yang lebih besar dan nilai yang di masukan harus konstan dan tidak boleh berubah-ubah
 
 
- OPERATOR MATEMATIKA
+OPERATOR MATEMATIKA
 - javascript mendukung banya sekali operator matematika untuk tipe data number
 - OPERATOR ARITMATIKA
 - OPERATOR AUGMENTED ASSINGMENTS
@@ -242,7 +234,7 @@ hasil dari operator logika adalah boolean lagi
 --------------------------------------
 ```
 
-- operator TIPE UNARY
+Operator TIPE UNARY
 
 ```
 ------------------------------------------------
@@ -252,7 +244,7 @@ hasil dari operator logika adalah boolean lagi
 |   !       |   false | dibalik menjadi TRUE   |  
 ------------------------------------------------
 ```
-   - CONTOH PEGUNAAN
+ - Contoh Penggunaa
 ```
   const nilaiUjian = 70;
   const nilaiAbsen = 70;
@@ -342,6 +334,7 @@ document.writeln(`<p>${sum}</p>`);    // output 11
 kasus di atas bisa di terapakan ke semua function di atas
 
 NaN
+
   - NaN adalah "Not a Number" , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
   - Bagaimana ji,a ternyata data string yang kita konversi ke number bukanlah data yang valid?
   - jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah NaN
