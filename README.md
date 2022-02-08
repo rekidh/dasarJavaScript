@@ -2,10 +2,11 @@
 - agar kode lebih konsisten lebih baik pilih pakai atau tidak
 - Saya merekomendasikan anda mengunakan `;`
 
-- `//comment di javaScript`   <=  ini adlah inline komen
-- `/*
+- `//comment di javaScript`   <=  ini adalah inline komen
+- ```/*
   double line comment
-*/`
+  double line comment
+*/```     <= ini adalah double line comment
 
 
 TIPE DATA NUMBER JAVASCRIPT
@@ -208,8 +209,8 @@ hasilBanding //<= nilai nya boolean
 ```
 
 OPERATOR LOGIKA
-- operator logika adalah operatoe untuk dua buah data boolean
-hasil dari operator logika adalah boolean lagi
+- operator logika adalah operator untuk `dua buah data boolean`
+hasil dari operator logika adalah `boolean lagi`
 ```
 ------------------------------
 |   Operator  | Keterangan   |
@@ -258,7 +259,7 @@ const lulus = lulusUjian && lulusAbsen;
 CONSOLE 
 - console adalah sebuah fitur javaScript untuk mendebug atau mencari masalah pada program
 console adalah sebauh metod atau function yang sudah di buatakn oleh javascript
-kita hanya cukup menuliskan console.metod(variabel);
+kita hanya cukup menuliskan `console.metod(variabel);`
 ```  
 -----------------------------------------------------------
 | console metod     |   keterangan                         |
@@ -335,10 +336,10 @@ kasus di atas bisa di terapakan ke semua function di atas
 
 NaN
 
-  - NaN adalah "Not a Number" , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
-  - Bagaimana ji,a ternyata data string yang kita konversi ke number bukanlah data yang valid?
-  - jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah NaN
-  - Jika NaN di operasikan dengan data Number lain nya maka hasilnya akan menjadi NaN
+  - `NaN`adalah `Not a Number` , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
+  - Bagaimana jika ternyata data string yang kita konversi ke number bukanlah data yang valid?
+  - jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah `NaN`
+  - Jika `NaN` di operasikan dengan data Number lain nya maka hasilnya akan menjadi NaN
 
 ```
 document.writeln(`<p>${parseInt("salah")}</p>);   //NaN
@@ -353,22 +354,22 @@ document.writeln(`<p>${Number("1x")}</p>); // NaN
 document.writeln(`<p>${Number("bukan number")}</p>);  //NaN
 ```
 
-isNaN()  Function
-  - Kadang kita ingin mengecek apakah sebuah number itu NaN atau bukan
-  - Untuk melakukan pengecekan tersebut, kita bisa menggunakan function isNaN(number)
+`isNaN()`  Function
+  - Kadang kita ingin mengecek apakah sebuah number itu `NaN` atau bukan
+  - Untuk melakukan pengecekan tersebut, kita bisa menggunakan function `isNaN(number)`
   - Hasil nya adalah berupa data boolean
 
 TIPE DATA ARRAY
   - array adalah tipe data, yang berisi sekumpulan data
   - array di javaScript memiliki sifat dinamis,artinya data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
-  - array diagram
+    - array diagram
 ```
 ____________________
 | [] [] [] [] [] [] |
---------------------
+____________________
 ```
-- Unutuk membuat array `{cek code di bawah}` , di dalam array kita bisa memasukan data apa saja bisa `["string",1,true]`
-setiap data di pisakan oleh tanda `koma` `,`
+- Unutuk membuat array `cek code di bawah` , di dalam array kita bisa memasukan data apa saja bisa `["string",1,true]`
+setiap data di pisakan oleh tanda koma `,`
 
   - Code membuat array
 ```
@@ -377,11 +378,153 @@ let arrayKosong=[];
 let arrayNama=["denki","nami","lala"]
 ```
 - Cara kerja array
-    - Setiap data di array akan di simpan dalam posisi berurutan, dimana urutan pertama di mulai dari 0
+    - Setiap data di array akan di simpan dalam posisi berurutan, dimana urutan pertama di mulai dari `0` nol
     - Setiap kita menambahkan data ke array , otomatis data akan di simpan di urutan terakhir 
-    - Urutan di array kita sebut dengan Index
-    
+    - Urutan di array kita sebut dengan `index`
+```
+   0   1   2   3   4  //<= index array
+______________________
+| [i] [i] [i] [i] [i] |  //<= i adalah isi aray
+______________________
+^ Panjang nya 5 ^
+```
+  - menghitung index `panjang - 1 `
+
+Menambah Array
+```
+const nama = [];
+
+nama.push("reki");
+nama.push("nama ke dua");
+
+console.table(nama);    // untuk melihat array dalam bentuk tabel
+```
+  - dalam array kita bebas memasukan tipe data apa saja karna javaScript memiliki konsep `Dymanic Typing`
+
+- Operasi di Array
+```
+_______________________________________________________
+|  Operasi          |  Keterangan                      |
+_______________________________________________________
+| var.push(value)   | Menambahakan data ke array       |
+| var.length        | Untuk mendapatkan panjang array  |
+| var[index]        | Mendapat data di posisi index    |
+| var[index]=value  | Mengubah data di posis index     |
+| delete var[index] | Menghapus data di posisi index,  |
+|                   | namun index tidak bergeser       |
+_______________________________________________________
+```
+    contoh:
+```
+const nama = [];
+
+nama.push("reki");
+nama.push("nama ke dua");
+
+console.info(nama[0]);    // <= output reki
+console.info(nama[1]);    // <= output nama ke dua
+
+nama[0]="dodi";
+console.info(nama[0]);  //<= dodi
+```
+- perlu di perhatikan saat menghapus data pada index , data pada index tersebut memang hilang namun panjang array nya tidak akan berkutang . namun pada suatu saat anda ingin mengisi data pada array index yang di hapus masih bisa
+contoh:
+```
+const nama = [];
+
+nama.push("reki");
+nama.push("nama ke dua");
+nama.push("dede");
+nama.push("oki");
+
+delete nama[3];
+console.info(nama[3]);  // undifine
+
+nama[3]= "qory";
+console.info(nama[3]);  // qory
+```
+- perlu di ingat
+  - Data dalam array tidak ada batasan nya harus data apa
+  - Jadi kita bisa memasukan data apa saja kedalam array
+  - Bahkan kita juga bisa memasukan array ke dalam array `multy demention array`
 
 
+TIPE DATA OBJECT
+- tipe data object di java script sama hal nya Array Associative pada PHP 
+
+- Associative Array
+  - Di bahasa PHP kita bisa mengubah index berupa tipe data lain nuber/string
+  - fitur ini biasa di sebut Associative Array atau `hash`
+  - di javaScript Associative Array tidak di dukung.
+  - jika kita memaksakan memasukan data bukan number di index aray , maka javaScript akan merubah tipe data tadi menjadi Object , dan ini bisa berbahaya ,karena beberapa operasi di array tidak bisa di pergunakan
+
+- Tipe data  Object
+  - tipe data object adalah tipe data yang mirip dengan tipe data array
+  - Yang membedakan adalah index pada tipe data object bisa menggunakan string 
+  - index di object biasanya di sebut `attributes` atau `properti` , bukan index
+
+- Membuat Object kosong
+  - `const orang = {};`
+  - kalau di array kita menggunkankan `[ ]` , untuk Object kita menggunkan `{ }`
+
+- Bagaimana kalau ingin merubah property / atribut di object kalau di array kita sebut index
+  - kalau di array `var[nomor index]` kalau di object `var["nama property/ atribut]` 
+  - biasanya properti/atribut menggunakan string
+  - contoh:
+  ```
+  const orang ={};      <= pembutan object
+
+  //menambah atau mengubah 
+  orang["nama"] = "reki";
+  orang["alamat"]= "jln.sudirman";
+  orang["umur"]= 26;
+  orang["hobi"]= "menonton";
+
+  //menhapus
+  delete orang["hobi"];
+
+  console.table(orang);   // propety/index "hobi" telah hilang
+  ```
+- Pada array kita bisa memasukan isi dari array secara lansung `const angka = [1,2,3,4]` pada object juga bisa dengan urutan `property` `:` `value` 
+
+```
+const separu = {
+  merek : "adidas" ,      
+  warna : "putih" ,
+  ukuran : 32 
+};
+```
+  - untuk atribut kalau kata nya melebihi 1 kata 
+  bisa mengunakan `" "`
+  - coba kita bandingkan dengan array di atas . value nya ` 1` index nya `0` kalau object index nya `merek` value nya `adidas`
+
+- Mengakses property Object
+  - `${var.property}`
+  - alternatif jika nama property melebihi 1 kata `${var[property]}`
+```
+const separu = {
+  merek : "adidas" ,      
+  warna : "putih" ,
+  ukuran : 32 
+};
+
+console.info(${sepatu.ukuran})
+document.innerHTML=`sepatu saya warna ${sepatu.warna}`;
+```
 
 
+If Expression
+
+- `if` biasanya di gunakan untuk menemtukan sebuah kondisi
+- dalam javaScript ,`if` adalah satu kata kunci yang di gunakan untuk percapangan
+- percabangan artinya kita bisa mengeksekusi kode program tertentu jika suatu kondisi terpenuhi `kondisi biasanya pertipe data bolean`
+- hampir semua bahasa pemrograman mendukung `if expression`
+- contoh:
+``
+const satu = 1;
+const dua = 2;
+
+if(satu<dua){ //<=kalau benar satu lebeh kecil dari dua
+  document.innerHTML= "satu"; //<=baru kode ini di exsekusi
+}
+```
