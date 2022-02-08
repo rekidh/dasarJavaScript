@@ -278,7 +278,7 @@ kita hanya cukup menuliskan console.metod(variabel);
 -----------------------------------------------------------
 ```
 SRING TEMPLATE
-- javaScript sekaran memiliki yang bernama srting templet ,
+  - javaScript sekaran memiliki yang bernama srting templet ,
 dimana kita bisa mensubtitusi data dari luar string kedalam string
 Untuk pengunaan string template kita mengunakan `backtick`
 ```
@@ -290,7 +290,7 @@ contoh : document.innerHTML=`<p>hello${world}</p>`;
 document.innerHTML="<p>hello"+world+"</p>"
 ```
 STRING TEMPLATE JUGA SUPORT MULTILINE
-    - string temlate biasanya di gunakan untuk substitusi 
+  - string temlate biasanya di gunakan untuk substitusi 
 ```
 const multiLine= ` Nama saya adalah reki.
 saya sangant menyukai dunia programing,
@@ -341,11 +341,11 @@ document.writeln(`<p>${sum}</p>`);    // output 11
 ```
 kasus di atas bisa di terapakan ke semua function di atas
 
-- NaN
-NaN adalah "Not a Number" , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
--Bagaimana ji,a ternyata data string yang kita konversi ke number bukanlah data yang valid?
--jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah NaN
--Jika NaN di operasikan dengan data Number lain nya maka hasilnya akan menjadi NaN
+NaN
+  - NaN adalah "Not a Number" , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
+  - Bagaimana ji,a ternyata data string yang kita konversi ke number bukanlah data yang valid?
+  - jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah NaN
+  - Jika NaN di operasikan dengan data Number lain nya maka hasilnya akan menjadi NaN
 
 ```
 document.writeln(`<p>${parseInt("salah")}</p>);   //NaN
@@ -360,15 +360,15 @@ document.writeln(`<p>${Number("1x")}</p>); // NaN
 document.writeln(`<p>${Number("bukan number")}</p>);  //NaN
 ```
 
-- isNaN()  Function
+isNaN()  Function
   - Kadang kita ingin mengecek apakah sebuah number itu NaN atau bukan
-  -Untuk melakukan pengecekan tersebut, kita bisa menggunakan function isNaN(number)
-  -Hasil nya adalah berupa data boolean
+  - Untuk melakukan pengecekan tersebut, kita bisa menggunakan function isNaN(number)
+  - Hasil nya adalah berupa data boolean
 
 TIPE DATA ARRAY
-  -array adalah tipe data, yang berisi sekumpulan data
-  -array di javaScript memiliki sifat dinamis,artinya data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
--array diagram
+  - array adalah tipe data, yang berisi sekumpulan data
+  - array di javaScript memiliki sifat dinamis,artinya data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
+  - array diagram
 ```
 ____________________
 | [] [] [] [] [] [] |
@@ -377,7 +377,7 @@ ____________________
 - Unutuk membuat array `{cek code di bawah}` , di dalam array kita bisa memasukan data apa saja bisa `["string",1,true]`
 setiap data di pisakan oleh tanda `koma` `,`
 
--Code membuat array
+  - Code membuat array
 ```
 let arrayKosong=[];
 
