@@ -3,10 +3,14 @@
 - Saya merekomendasikan anda mengunakan `;`
 
 - `//comment di javaScript`   <=  ini adalah inline komen
-- ```/*
+- 
+```
+/*
   double line comment
   double line comment
-*/```     <= ini adalah double line comment
+*/
+```
+di atas adalah double line comment
 
 
 TIPE DATA NUMBER JAVASCRIPT
@@ -468,7 +472,7 @@ TIPE DATA OBJECT
   - kalau di array kita menggunkankan `[ ]` , untuk Object kita menggunkan `{ }`
 
 - Bagaimana kalau ingin merubah property / atribut di object kalau di array kita sebut index
-  - kalau di array `var[nomor index]` kalau di object `var["nama property/ atribut]` 
+  - kalau di array `var[nomor index]` kalau di object `var["nama property/ atribut"]` 
   - biasanya properti/atribut menggunakan string
   - contoh:
   ```
@@ -494,9 +498,9 @@ const separu = {
   ukuran : 32 
 };
 ```
-  - untuk atribut kalau kata nya melebihi 1 kata 
+  - untuk atribut kalau katanya melebihi 1 kata 
   bisa mengunakan `" "`
-  - coba kita bandingkan dengan array di atas . value nya ` 1` index nya `0` kalau object index nya `merek` value nya `adidas`
+  - coba kita bandingkan dengan array di atas .pada array value nya ` 1` index nya `0`, kalau object index nya `merek` value nya `adidas`
 
 - Mengakses property Object
   - `${var.property}`
@@ -515,12 +519,12 @@ document.innerHTML=`sepatu saya warna ${sepatu.warna}`;
 
 If Expression
 
-- `if` biasanya di gunakan untuk menemtukan sebuah kondisi
+- `if` biasanya di gunakan untuk menentukan sebuah kondisi
 - dalam javaScript ,`if` adalah satu kata kunci yang di gunakan untuk percapangan
 - percabangan artinya kita bisa mengeksekusi kode program tertentu jika suatu kondisi terpenuhi `kondisi biasanya pertipe data bolean`
 - hampir semua bahasa pemrograman mendukung `if expression`
 - contoh:
-``
+```
 const satu = 1;
 const dua = 2;
 
