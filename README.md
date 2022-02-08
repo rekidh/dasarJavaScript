@@ -289,7 +289,105 @@ contoh : document.innerHTML=`<p>hello${world}</p>`;
 
 document.innerHTML="<p>hello"+world+"</p>"
 ```
-   
+-SRING TEMPLATE JUGA SUPORT MULTILINE
+sring temlate biasanya di gunakan untuk substitusi 
+```
+const multiLine= ` Nama saya adalah reki.
+saya sangant menyukai dunia programing,
+dan saya juga sesing menontont video tutorial programing`;
+
+document.writeln("<pre>");
+document.writeln(multiLine);
+document.writeln("<pre>");
+```
+- KONVERSI STING DAN NUMBER
+  - Pada saat membuat apikasi terkadang imput pengguna selalau dalam bentuk string
+  - Sedangkan kita ingin mengelola data dalam bentuk Number
+  - Maka sangat disarankan untuk melakukan konversi tipe data 
+Masalah tampa konversi
+```
+const value1 = "1";
+const value2 = 1;
+const sum = value1+value2;
+document.writeln(`<p>${sum}</p>`);    // output 11
+```
+- Cara Untuk Conversi String dan Number
+```
+------------------------------------------------------------------------------
+|   Function         |   Keterangan                                           |
+-------------------------------------------------------------------------------
+| parseInt(string)   |  Mengkonversi dari sring ke number (bil bulat)         |
+| parseFloat(str)    |  Mengkonversi dari sring ke number (bil pecahan)       |
+| Number(str)        |  Mengkonversi dari sring ke number (bil bulat/pecahan) |
+| nummber.toSting()  | Mengkonversi dari number ke string                     |
+-------------------------------------------------------------------------------
+```
+contoh kasus:
+```
+const value1 = "1";
+const value2 = 1;
+
+const valueConver= parseInt(value1);
+
+const sum = valueConver+value2;
+document.writeln(`<p>${sum}</p>`);    // output 2
+```
+dengan gaya penulisan ke 2
+```
+const value1 = "1";
+const value2 = 1;
+const sum = value1.parseInt()+value2;
+document.writeln(`<p>${sum}</p>`);    // output 11
+```
+kasus di atas bisa di terapakan ke semua function di atas
+
+- NaN
+NaN adalah "Not a Number" , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
+-Bagaimana ji,a ternyata data string yang kita konversi ke number bukanlah data yang valid?
+-jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah NaN
+-Jika NaN di operasikan dengan data Number lain nya maka hasilnya akan menjadi NaN
+
+```
+document.writeln(`<p>${parseInt("salah")}</p>);   //NaN
+document.writeln(`<p>${parseFloat("1.1text")}</p>);  // 1.1
+
+document.writeln(`<p>${parseFloat("data 1.1text")}</p>);  //Nan  
+//karna data yang dapat di tolerir jika text nya berada di belakang 
+
+//Number() tidak akan mentolerir kesalahan pada data 
+document.writeln(`<p>${Number("1.1ups")}</p>);  //NaN
+document.writeln(`<p>${Number("1x")}</p>); // NaN
+document.writeln(`<p>${Number("bukan number")}</p>);  //NaN
+```
+
+- isNaN()  Function
+  - Kadang kita ingin mengecek apakah sebuah number itu NaN atau bukan
+  -Untuk melakukan pengecekan tersebut, kita bisa menggunakan function isNaN(number)
+  -Hasil nya adalah berupa data boolean
+
+-TIPE DATA ARRAY
+  -array adalah tipe data, yang berisi sekumpulan data
+  -array di javaScript memiliki sifat dinamis,artinya data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
+-array diagram
+```
+____________________
+| [] [] [] [] [] [] |
+--------------------
+```
+- Unutuk membuat array `{cek code di bawah}` , di dalam array kita bisa memasukan data apa saja bisa `["string",1,true]`
+setiap data di pisakan oleh tanda `koma` `,`
+
+-Code membuat array
+```
+let arrayKosong=[];
+
+let arrayNama=["denki","nami","lala"]
+```
+- Cara kerja array
+    - Setiap data di array akan di simpan dalam posisi berurutan, dimana urutan pertama di mulai dari 0
+    - Setiap kita menambahkan data ke array , otomatis data akan di simpan di urutan terakhir 
+    - Urutan di array kita sebut dengan Index
+    
 
 
 
