@@ -289,8 +289,8 @@ contoh : document.innerHTML=`<p>hello${world}</p>`;
 
 document.innerHTML="<p>hello"+world+"</p>"
 ```
--SRING TEMPLATE JUGA SUPORT MULTILINE
-sring temlate biasanya di gunakan untuk substitusi 
+STRING TEMPLATE JUGA SUPORT MULTILINE
+    - string temlate biasanya di gunakan untuk substitusi 
 ```
 const multiLine= ` Nama saya adalah reki.
 saya sangant menyukai dunia programing,
@@ -300,11 +300,11 @@ document.writeln("<pre>");
 document.writeln(multiLine);
 document.writeln("<pre>");
 ```
-- KONVERSI STING DAN NUMBER
+KONVERSI STING DAN NUMBER
   - Pada saat membuat apikasi terkadang imput pengguna selalau dalam bentuk string
   - Sedangkan kita ingin mengelola data dalam bentuk Number
   - Maka sangat disarankan untuk melakukan konversi tipe data 
-Masalah tampa konversi
+- Masalah tampa konversi
 ```
 const value1 = "1";
 const value2 = 1;
@@ -322,7 +322,7 @@ document.writeln(`<p>${sum}</p>`);    // output 11
 | nummber.toSting()  | Mengkonversi dari number ke string                     |
 -------------------------------------------------------------------------------
 ```
-contoh kasus:
+  - contoh kasus:
 ```
 const value1 = "1";
 const value2 = 1;
@@ -332,7 +332,7 @@ const valueConver= parseInt(value1);
 const sum = valueConver+value2;
 document.writeln(`<p>${sum}</p>`);    // output 2
 ```
-dengan gaya penulisan ke 2
+  - dengan gaya penulisan ke 2
 ```
 const value1 = "1";
 const value2 = 1;
@@ -365,7 +365,7 @@ document.writeln(`<p>${Number("bukan number")}</p>);  //NaN
   -Untuk melakukan pengecekan tersebut, kita bisa menggunakan function isNaN(number)
   -Hasil nya adalah berupa data boolean
 
--TIPE DATA ARRAY
+TIPE DATA ARRAY
   -array adalah tipe data, yang berisi sekumpulan data
   -array di javaScript memiliki sifat dinamis,artinya data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
 -array diagram
