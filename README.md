@@ -532,3 +532,143 @@ if(satu<dua){ //<=kalau benar satu lebeh kecil dari dua
   document.innerHTML= "satu"; //<=baru kode ini di exsekusi
 }
 ```
+Else Expresion
+- Block if akan di exsekusi ketika kondisi if bernilai benar / true
+- kadang kita ingin melakukan eksekusi program tertentu jika kondisinya bernilai false / salah
+- hal ini bisa dilakukan menggunakan else ekpresion 
+- contoh:
+```
+const nilai = 65;
+
+if (nilai>70){
+  document.innerHTML= " selamat nilai kamu BAGUS";
+} else {
+  document.innerHTML=" maaf nilai kurang";      // kode ini akan di eksekusi jika nilainya kurang dari 70
+}
+```
+Else If Expresion
+- kadang dalam if kita butuh membuat beberapa kondisi
+- kasus seperti ini di javascript kita bisa menggunakan els if expresion
+- contoh:
+```
+const nilai = 70;
+
+if (nilai > 80){
+  document.innerHTML= " selamat nilai kamu BAGUS";
+} else if ( nilai > 70){
+  document.innerHTML= " selamat nilai kamu AMAN";
+} else if ( nilai > 60){
+  document.innerHTML= " tingkatkan nilai kamu";
+}else{
+  document.innerHTML= " nilai MERAH";
+}
+```
+- note : else if akan mengeksekusi block program yang pertama di terpenuhi nilai nya
+  - jika `const nilai = 90;` code if yang akan di jalankan tidak peduli jika ada nilai lain yang terpenuhi
+
+POP UP
+- javaScript memiliki fitur yang bernama alet,prompt, dan confirm
+- alert digunakan untuk memberikan peringatan beruapa popup text di broser
+  - `alert("tulikan pesan nya");`
+- prompt di gunakan untuk meminta input string dari pernguna broser dalam bentuk popup input text
+  - contoh:
+  - `const nama = prompt("masukan nama");  // petunjuk untuk user`
+  - lalu kita tampung inputan user ke dalam var nama
+  - jika kita ingin menampilakan kitabisa gunakan alert atau yang alainnya
+  - disini saya beri contoh alart saja
+  ```
+  const nama = prompt( "masukan nama");
+  alart(`hallo ${nama}`);
+  ```
+- sedangkan confirm digunakan untuk meminta input boolean dari pengguna dalam bentuk popup input pilihan
+  - dengan ini kita bisa mengkonfirmasi apada user apakah `nama` dalam `propt` tadi sudah benar
+  - `confirm("`apa yang inggin anda konfirmasi`")
+;`
+  - contoh kasus:
+  ```
+  alert("selamat datang");
+  
+  const nama = prompt(" siapa nama anda?");
+  const namaBenar = confirm("nama anda adalah "+nama+"?");   // jika tidak menggunakan sring template
+  if (namaBenar==false){
+    nama = prompt(" siapa nama anda?");
+  }
+  if (namaBenar== true){
+    alert(`terimakasi ${nama} telah memasuakan nama`)
+  }
+  ```
+
+UNDEFINED
+- undefined adalah sebuah kata kunci di javascript
+- undefine adalah sebuah tipe data
+- sebuah variabele yang belum di tampilkan nilai , maka artinya variabele tersebut merupakan tipe undefined
+  - `var nama ;` nama adalah `undefined`
+- kadang undefine memang sedikit membingungkan
+- undefine berbeda dengan null 
+  - Var undefine
+```
+var name;     // undefined
+ if (name === undefined){
+   alert("mohon masukan nama anda");
+   name= prompt("please input your name");
+ }else{
+   alert(`hallo ${name}`)
+ }
+ ```
+  - Array Undefined
+  ```
+  const name = ["eko","dede","abdi"]
+
+  document.innerHTML=name[3]; // output UNDEFINE karana [3] belum di buat
+  ```
+  - Object Undefined
+  ```
+  let person ={
+    alamat : jln.afrika ,
+    umur : 26
+  }
+
+  document.innerHTML=person.name;   //output UNDEFINE karana name belum di buat
+  ```
+
+NULL
+- null merupakan representasi dari data kosong
+- null dan undefine itu berbeda
+- nul berati variabele sudah di tambahkan falue nya , hanya saja value nya null
+- sedang kan undefine variabel belum ditambahkan valu apa pun
+  - object null
+```
+const orang= {
+  name : "kek",
+  alamat: " jln. mada",
+  umur : 25,
+  tinggi:''
+
+}
+console.log(orang.tinggi)   // tinggi NULL
+```
+  - array null
+  ```
+   const orangg= ["kek"," jln. mada",25,'']
+  orang[3]==null ? console.log('benar'): console.log('salah')
+  ```
+
+Switch Stetment
+- kadang kita hanya butuh menggunkan kondisi sederhana di if stetment seperti hanya menggunkan per bandingan ==
+- Switch stetmen percabangan yang sama seperti if , namun lebih sederhana secara pembuatan
+- kadang di switgh stetment hanya untuk perbandingan ==
+  - contoh
+  ```
+  switch(nilai){
+    case "A":
+     document.innerHTML="nilai A";
+      break;
+    case "B":
+    case "C": 
+    document.innerHTML="nilai C";
+     break;
+    default :
+    document.innerHTML="nilai tidak ada";
+  }
+  ```
+  - jika `nilai = A` case A akan di jalankan sampai menemukan kata `break`

@@ -76,3 +76,28 @@ document.writeln("<h1> 1+2 = "+result+"</h1>");
 let originalResult= result;
 result=result-1;
 document.writeln(`${originalResult}-1=${result}`);
+
+const orang= {
+  name : "kek",
+  alamat: " jln. mada",
+  umur : 25,
+  tinggi:''
+
+}
+console.log(orang.tinggi)
+
+const orangg= ["kek"," jln. mada",25,'']
+orang[3]==null ? console.log('benar'): console.log('salah')
+
+   let nilai = "A"
+  switch(nilai){
+    case "A":
+     document.innerHTML="nilai A";
+      break;
+    case "B":
+    case "C": 
+    document.innerHTML="nilai C";
+     break;
+    default :
+    document.innerHTML="nilai tidak ada";
+  
