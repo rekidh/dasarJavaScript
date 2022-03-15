@@ -89,15 +89,16 @@ console.log(orang.tinggi)
 const orangg= ["kek"," jln. mada",25,'']
 orang[3]==null ? console.log('benar'): console.log('salah')
 
-   let nilai = "A"
+  let nilai = "A"
+
   switch(nilai){
-    case "A":
-     document.innerHTML="nilai A";
+  case "A":
+    document.innerHTML="nilai A";
       break;
-    case "B":
-    case "C": 
+  case "B":
+  case "C": 
     document.innerHTML="nilai C";
-     break;
-    default :
+      break;
+  default :
     document.innerHTML="nilai tidak ada";
-  
+  }
