@@ -804,7 +804,7 @@ OPERATOR IN
   }
   ```
 
-  ** Peringatan **
+  **_Peringatan_**
 
   - in operator hanya akan mengecek apakah sebuah property atau index ada atau tidak
   - jadi walaupun nilai nya property atau index nya `undefine` atau `null` maka tetap akan di angap ada
@@ -830,3 +830,100 @@ OPERATOR IN
 
   document.writeln(`<p>${result}</p>`);
   ```
+
+**TERNARY OPERATOR**
+
+- Ternary operator sederhana dari `if` _statement_
+- Ternary operator terdiri dari kondisi yang dievaluasi , jika menghasilkan `true` maka nilai pertama _diambil_, jika `false` ,maka nilai kedua yang di ambil
+
+- _code tampa ternay operator_
+
+```
+const nilai = 75 ;
+let ucapan ;
+
+if ( nilai>= 75) {
+  ucapan = "Selamat Anda Lulus";
+}else{
+  ucapan = "Silahkan Coba Lagi ";
+}
+document.writeln(`<p>${ucapan}</p>`)
+```
+
+- **Dengan ternary opertaror**
+
+```
+ucapan= nilai >= ? "Selamat Anda Lulus": "Silahkan Coba Lagi ";
+
+document.writeln(`<p>${ucapan}</p>`)
+```
+
+**NULLSH COALESCING OPERATOR**
+
+- Nullish `value` adalah `null` dan `undefined`
+- Nullsh coalecing operator `(??)` adalah operator mirip dengan `ternary operator`, yang membedakan adalah pada kondisi , jika bernilai `null` atau `undefined` , baru `value default` nya di ambil
+
+- code tampa nullish coalescing operator
+
+```
+let parameter ;
+
+
+let data = parameter;
+if (data === undeffined || data === nul){
+  data = " nilai default";
+}
+console.log(data);
+```
+
+- _nullish coalescing operator_
+
+```
+ let parameter ;
+
+let data = parameter ?? "Nilai Default";
+console.log(data);
+```
+
+**OPTIONAL CHAINING**
+
+- Optional chaining operator `(?)` merupakan `operator` yang digunakan untuk _mengamankan_ ketika kita ingin mengakses `property` dar sebuah `object` dari `data nullish`
+- jika kita mencoba mengakses `property` dari sebuah `object` dari `data nullish` tampa menggunakan `optional chaining operator` , maka akan terjadi `error`
+
+- _error code nyllish_
+
+```
+let person = { };
+
+alert(person.address.counry);
+```
+
+- ini akan keluar `error` bukan `undefined`, karna yang kita coba akses `object person` yang di dalam nya ada alamat & negara namun alamat belum di definisikan / `undefined` lalu kita berusaha masuk.
+- pada `{person.address}` hasil nya `undefined` namaun jka kita paksa mengakses leb=ih jauh akan terjadi `error`
+- kalau sudah begini bagaimana lagi cara nya?
+
+  - kita harus melakukan pengecekan menggunkan kan `if`
+  - contoh
+
+  ```
+  let person= { };
+
+  let say ;
+  if ( person.address !== undefined && person.address !== null ){
+    say = person.address.country;
+  }
+  alert(say);
+  ```
+
+- namun disini kita akan melakukan pengecekan dengan _optional chaining_
+- contoh:
+
+```
+let person = { };
+
+let country = person?.address?.country
+
+console.log( county );
+```
+
+**FALSY & RTUETY**
