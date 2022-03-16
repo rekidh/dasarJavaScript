@@ -1,4 +1,4 @@
-TITIK COMA OPSIONAL DI JAVA SCRIPT
+**TITIK COMA OPSIONAL DI JAVA SCRIPT**
 
 - agar kode lebih konsisten lebih baik pilih pakai atau tidak
 - Saya merekomendasikan anda mengunakan `;`
@@ -15,7 +15,7 @@ TITIK COMA OPSIONAL DI JAVA SCRIPT
 
 di atas adalah double line comment
 
-TIPE DATA NUMBER JAVASCRIPT
+**TIPE DATA NUMBER JAVASCRIPT**
 
 - Javascript hanya mendukung satau tipe data Number berupa bilangan bulat atau bilangan desimal
   - Bilangan bulat ` 10 , 45 ,89` dll
@@ -25,7 +25,7 @@ TIPE DATA NUMBER JAVASCRIPT
   - `10 , 10.5 , 100 ` <= adalah NUMBER
   - `"10","10.5","100"` <= ini adalah STRING
 
-NUMBER NOTATION
+**NUMBER NOTATION**
 
 - javascript mendukung number notation, default nya adalah basis 10
 - javascript juga mendukung BINARY,HEXADECIMAL dan OCTAL
@@ -33,21 +33,21 @@ NUMBER NOTATION
   - `BINARY : 0b10101`
   - `OCTAL :0o10`
 
-TIPE DATA BOOLEAN
+**TIPE DATA BOOLEAN**
 
 - TIPE DATA `boolean` adalah tipe data yang berisikan nilai kebenaran
   artinya hanya ada dua nilai `BENAR` atau `SALAH` (`TRUE` atau `FALSE`)
 - walau tipe data boolean murapakan tipa data yang sangat sederhana tapi tipe data ini sangat banya di gunakan di bebrapa fitur program
 
-TIPE DATA STRING
+**TIPE DATA STRING**
 
 - tipe data string di tandai dengan tand petik `"PETIK DUA"` dan `'PETIK SATU'`
 - nilai nya boleh kosong atau banyak karakter
 - `MENAMBAH` atau menggabngkan `STRING` biasanya mengunkan tanda `+`(plus)
 
-ESCAPE SEQUENCE
+**ESCAPE SEQUENCE**
 
-- javascript mendukung escape sequence di string. escape sequence merupakan karakter
+- javascript mendukung `escape sequence` di `string`. escape sequence merupakan karakter
   khusus seperti `TAB`,` ENTER` , `kutip` dua ` dll`
 
 ```
@@ -62,7 +62,7 @@ ESCAPE SEQUENCE
 
 ```
 
-CONTOH PENGUNAAN
+**_Contoh Pengunaan_**
 
 - `document.writeln("reki \n desma haldi")` <= ENTER
 
@@ -76,7 +76,7 @@ CONTOH PENGUNAAN
 - `document.writeln("reki\'desma haldi")` <= kutip '
   - reki'desma haldi
 
-VARIABEL
+**VARIABEL**
 
 - variabel adalah tempat/wadah untuk menampung nilai
   - PROBLEM KALAU TIDA MENGGUNAKAN VARIABEL
@@ -106,13 +106,13 @@ VARIABEL
 ```
 
 - kalau kita ingin merubah merubah nilai yang kita tulis
-  kita cukup merubah isi dari var nya menjadi nilai baru yang kita inginkan
-  sekarang kita ingin merubah nilai menjadi ("reki") kita cukup menulikan
+  kita cukup merubah `isi` dari `var` nya menjadi `nilai` baru yang kita inginkan
+  sekarang kita ingin merubah nilai menjadi `("reki")` kita cukup menuliskan
 - `var = " reki "`
 - maka nilai yang ada pada `document.writeln(reki) `
 - akan berubah semua tampa kita menuliskannya satu per satu
 
-VARIABEL DI ES5
+**VARIABEL DI ES5**
 
 - cont & let
   - kenapa?
@@ -120,7 +120,7 @@ VARIABEL DI ES5
   - `let` => di gunakan pada ruang lingkup yang kecil dan nilai di dalam nya sering berubah
   - `const` => di gunakan pada ruang lingkup yang lebih besar dan nilai yang di masukan harus konstan dan tidak boleh berubah-ubah
 
-OPERATOR MATEMATIKA
+**OPERATOR MATEMATIKA**
 
 - javascript mendukung banya sekali operator matematika untuk tipe data number
 - OPERATOR ARITMATIKA
@@ -128,7 +128,7 @@ OPERATOR MATEMATIKA
 - OPERATOR UNARY
 - DLL
 
-OPERATOR ARITMATIKA
+**OPERATOR ARITMATIKA**
 
 ```
 -----------------------------------
@@ -154,7 +154,7 @@ result=result-1;       //<= result ini di dikler lagi menjadi 3-1
 document.writeln(`${originalResul}-1=${result}`)
 ```
 
-OPERATOR AUGMENTED ASSIGNMENTS
+**OPERATOR AUGMENTED ASSIGNMENTS**
 
 - Digunakan untuk manipulasi Operasi Untuk diri nya sendri
   atau jika suatu variabel ingin di `*`,`/`,`+`,`-` dan di tampung lagi(atau memasukan ulang nilai nya ke variabel itu maka ini lah jawaban nya)
@@ -172,7 +172,7 @@ OPERATOR AUGMENTED ASSIGNMENTS
   ------------------------------------------------------```
 ````
 
-OPERATOR UNARY
+**OPERATOR UNARY**
 
 - ini adalah operator yang biasa nya cukup menerima satu data
   di gunakan untuk operasi satu data saja
@@ -200,7 +200,7 @@ result++; //<= result +1; atau result +=1; hasil 1
 result = -result ;  //<= nilai var result di ubah menjadi negatif result
 ```
 
-OPERATOR PERBANDINGAN
+**OPERATOR PERBANDINGAN**
 
 - Operator Perbandingan adalah Operator untuk membandingkan dua buah data
   Opersi yang menghasilakan nilai Boolean (benar/salah)
@@ -224,7 +224,7 @@ let hasilBanding=angka5==angka4 ;
 hasilBanding //<= nilai nya boolean
 ```
 
-OPERATOR LOGIKA
+**OPERATOR LOGIKA**
 
 - operator logika adalah operator untuk `dua buah data boolean`
   hasil dari operator logika adalah `boolean lagi`
@@ -253,7 +253,7 @@ OPERATOR LOGIKA
 --------------------------------------
 ```
 
-Operator TIPE UNARY
+**OPERATOR TIPE UNARY**
 
 ```
 ------------------------------------------------
@@ -276,10 +276,10 @@ Operator TIPE UNARY
 const lulus = lulusUjian && lulusAbsen;
 ```
 
-CONSOLE
+**CONSOLE**
 
 - console adalah sebuah fitur javaScript untuk mendebug atau mencari masalah pada program
-  console adalah sebauh metod atau function yang sudah di buatakn oleh javascript
+  console adalah sebauh `metod` atau `function` yang sudah di buatakn oleh javascript
   kita hanya cukup menuliskan `console.metod(variabel);`
 
 ```
@@ -293,7 +293,7 @@ CONSOLE
 -----------------------------------------------------------
 ```
 
-SRING TEMPLATE
+**SRING TEMPLATE**
 
 - javaScript sekaran memiliki yang bernama srting templet ,
   dimana kita bisa mensubtitusi data dari luar string kedalam string
@@ -308,7 +308,7 @@ contoh : document.innerHTML=`<p>hello${world}</p>`;
 document.innerHTML="<p>hello"+world+"</p>"
 ```
 
-STRING TEMPLATE JUGA SUPORT MULTILINE
+**_STRING TEMPLATE JUGA SUPORT MULTILINE_**
 
 - string temlate biasanya di gunakan untuk substitusi
 
@@ -322,7 +322,7 @@ document.writeln(multiLine);
 document.writeln("<pre>");
 ```
 
-KONVERSI STING DAN NUMBER
+**KONVERSI STING DAN NUMBER**
 
 - Pada saat membuat apikasi terkadang imput pengguna selalau dalam bentuk string
 - Sedangkan kita ingin mengelola data dalam bentuk Number
@@ -372,12 +372,12 @@ document.writeln(`<p>${sum}</p>`);    // output 11
 
 kasus di atas bisa di terapakan ke semua function di atas
 
-NaN
+**NaN**
 
-- `NaN`adalah `Not a Number` , ini terjadi biasa nya ketika mengkonversi data yang tidak valid dan hasil nya menjadi NaN
-- Bagaimana jika ternyata data string yang kita konversi ke number bukanlah data yang valid?
-- jika data string yang kita ciba lakukan konversi bukan lah data valid, maka hasil dari konversi tersebut adalah `NaN`
-- Jika `NaN` di operasikan dengan data Number lain nya maka hasilnya akan menjadi NaN
+- `NaN`adalah `Not a Number` , ini terjadi biasa nya ketika mengkonversi data yang `tidak valid` dan `hasil nya` menjadi `NaN`
+- Bagaimana jika ternyata `data string` yang kita `konversi` ke `number` bukanlah data yang valid?
+- jika data `string` yang kita cOba lakukan konversi bukan lah data `valid`, maka hasil dari konversi tersebut adalah `NaN`
+- Jika `NaN` di operasikan dengan data `Number` lain nya maka hasilnya akan menjadi `NaN`
 
 ```
 document.writeln(`<p>${parseInt("salah")}</p>);   //NaN
@@ -394,14 +394,14 @@ document.writeln(`<p>${Number("bukan number")}</p>);  //NaN
 
 `isNaN()` Function
 
-- Kadang kita ingin mengecek apakah sebuah number itu `NaN` atau bukan
+- Kadang kita ingin mengecek apakah sebuah `number` itu `NaN` atau bukan
 - Untuk melakukan pengecekan tersebut, kita bisa menggunakan function `isNaN(number)`
-- Hasil nya adalah berupa data boolean
+- Hasil nya adalah berupa `data` `boolean`
 
-TIPE DATA ARRAY
+**TIPE DATA ARRAY**
 
-- array adalah tipe data, yang berisi sekumpulan data
-- array di javaScript memiliki sifat dinamis,artinya data bisa bertambah dengan sendirinya saat kita memasukan data ke dalam array
+- `array` adalah tipe `data`, yang berisi sekumpulan `data`
+- `array` di javaScript memiliki `sifat dinamis`,artinya _data bisa bertambah_ dengan sendirinya saat kita memasukan data ke dalam `array`
   - array diagram
 
 ```
@@ -479,7 +479,7 @@ nama[0]="dodi";
 console.info(nama[0]);  //<= dodi
 ```
 
-- perlu di perhatikan saat menghapus data pada index , data pada index tersebut memang hilang namun panjang array nya tidak akan berkutang . namun pada suatu saat anda ingin mengisi data pada array index yang di hapus masih bisa
+- perlu di perhatikan saat `menghapus data` pada `index` , `data pada index` tersebut memang `hilang` namun panjang `array` nya tidak akan -berkurang* . namun pada suatu saat anda ingin mengisi data pada \*\*\_array index yang di hapus masih bisa*\*\*
   contoh:
 
 ```
@@ -497,12 +497,12 @@ nama[3]= "qory";
 console.info(nama[3]);  // qory
 ```
 
-- perlu di ingat
-  - Data dalam array tidak ada batasan nya harus data apa
-  - Jadi kita bisa memasukan data apa saja kedalam array
-  - Bahkan kita juga bisa memasukan array ke dalam array `multy demention array`
+- _perlu di ingat_
+  - Data dalam `array` tidak ada batasan nya _harus data apa_
+  - Jadi kita bisa memasukan data apa saja kedalam `array`
+  - Bahkan kita juga bisa memasukan `array` ke dalam `array` `multy demention array`
 
-TIPE DATA OBJECT
+**TIPE DATA OBJECT**
 
 - tipe data object di java script sama hal nya Array Associative pada PHP
 
@@ -574,7 +574,7 @@ console.info(${sepatu.ukuran})
 document.innerHTML=`sepatu saya warna ${sepatu.warna}`;
 ```
 
-If Expression
+**IF EXPRESION**
 
 - `if` biasanya di gunakan untuk menentukan sebuah kondisi
 - dalam javaScript ,`if` adalah satu kata kunci yang di gunakan untuk percapangan
@@ -591,11 +591,11 @@ if(satu<dua){ //<=kalau benar satu lebeh kecil dari dua
 }
 ```
 
-Else Expresion
+**ELSE EXPRESION**
 
-- Block if akan di exsekusi ketika kondisi if bernilai benar / true
-- kadang kita ingin melakukan eksekusi program tertentu jika kondisinya bernilai false / salah
-- hal ini bisa dilakukan menggunakan else ekpresion
+- Block `if` akan di exsekusi ketika kondisi `if` bernilai `benar` / `true`
+- kadang kita ingin melakukan eksekusi program tertentu jika kondisinya bernilai `false` / `salah`
+- hal ini bisa dilakukan menggunakan `else` expresion
 - contoh:
 
 ```
@@ -608,7 +608,7 @@ if (nilai>70){
 }
 ```
 
-Else If Expresion
+**ELSE IF EXPRESION**
 
 - kadang dalam if kita butuh membuat beberapa kondisi
 - kasus seperti ini di javascript kita bisa menggunakan els if expresion
@@ -628,25 +628,25 @@ if (nilai > 80){
 }
 ```
 
-- note : else if akan mengeksekusi block program yang pertama di terpenuhi nilai nya
+- note : _else if akan mengeksekusi block program yang pertama di terpenuhi nilai nya_
   - jika `const nilai = 90;` code if yang akan di jalankan tidak peduli jika ada nilai lain yang terpenuhi
 
-POP UP
+**POP UP**
 
-- javaScript memiliki fitur yang bernama alet,prompt, dan confirm
+- javaScript memiliki fitur yang bernama `alert`,`prompt`, dan `confirm`
 - alert digunakan untuk memberikan peringatan beruapa popup text di broser
   - `alert("tulikan pesan nya");`
-- prompt di gunakan untuk meminta input string dari pernguna broser dalam bentuk popup input text
+- `prompt` di gunakan untuk meminta input `string` dari penguna browser dalam bentuk **_popup input text_**
   - contoh:
   - `const nama = prompt("masukan nama"); // petunjuk untuk user`
-  - lalu kita tampung inputan user ke dalam var nama
-  - jika kita ingin menampilakan kitabisa gunakan alert atau yang alainnya
-  - disini saya beri contoh alart saja
+  - lalu kita tampung inputan user ke dalam `var` `nama`
+  - jika kita ingin menampilkan kita bisa gunakan `alert` atau yang lainnya
+  - disini saya beri contoh `alart` saja
   ```
   const nama = prompt( "masukan nama");
   alart(`hallo ${nama}`);
   ```
-- sedangkan confirm digunakan untuk meminta input boolean dari pengguna dalam bentuk popup input pilihan
+- sedangkan `confirm` digunakan untuk meminta input `boolean` dari pengguna dalam bentuk `popup` _input pilihan_
 
   - dengan ini kita bisa mengkonfirmasi apada user apakah `nama` dalam `propt` tadi sudah benar
   - `confirm("`apa yang inggin anda konfirmasi`") ;`
@@ -665,14 +665,14 @@ POP UP
   }
   ```
 
-UNDEFINED
+**UNDEFINED**
 
-- undefined adalah sebuah kata kunci di javascript
-- undefine adalah sebuah tipe data
-- sebuah variabele yang belum di tampilkan nilai , maka artinya variabele tersebut merupakan tipe undefined
+- undefined adalah sebuah _kata kunci di javascript_
+- undefine adalah sebuah `tipe data`
+- sebuah variabele yang belum di tampilkan nilai , maka artinya `variabel` tersebut merupakan tipe `undefined`
   - `var nama ;` nama adalah `undefined`
 - kadang undefine memang sedikit membingungkan
-- undefine berbeda dengan null
+- `undefined` berbeda dengan `null`
   - Var undefine
 
 ```
@@ -704,13 +704,13 @@ let person ={
 document.innerHTML=person.name;   //output UNDEFINE karana name belum di buat
 ```
 
-NULL
+**NULL**
 
-- null merupakan representasi dari data kosong
-- null dan undefine itu berbeda
+- null merupakan representasi dari data `kosong`
+- null dan `undefined` itu _berbeda_
 - nul berati variabele sudah di tambahkan falue nya , hanya saja value nya null
 - sedang kan undefine variabel belum ditambahkan valu apa pun
-  - object null
+  - **object null**
 
 ```
 const orang= {
@@ -723,18 +723,18 @@ const orang= {
 console.log(orang.tinggi)   // tinggi NULL
 ```
 
-- array null
+- **array null**
 
 ```
  const orangg= ["kek"," jln. mada",25,'']
 orang[3]==null ? console.log('benar'): console.log('salah')
 ```
 
-Switch Stetment
+**SWITCH STETMENT**
 
-- kadang kita hanya butuh menggunkan kondisi sederhana di if stetment seperti hanya menggunkan per bandingan ==
-- Switch stetmen percabangan yang sama seperti if , namun lebih sederhana secara pembuatan
-- kadang di switgh stetment hanya untuk perbandingan ==
+- kadang kita hanya butuh menggunkan kondisi sederhana di ``if stetment` seperti hanya menggunkan per bandingan `==`
+- `Switch` stetmen percabangan yang sama seperti `if` , namun lebih sederhana secara pembuatan
+- kadang di `switch stetment` hanya untuk perbandingan `==`
   - contoh
   ```
   switch(nilai){
@@ -751,11 +751,11 @@ Switch Stetment
   ```
   - jika `nilai = A` case A akan di jalankan sampai menemukan kata `break`
 
-OPERATOR TYPE OF
+**OPERATOR TYPE OF**
 
-- operator tipe of merupakan operator yang bisa kita gunakan untuk melihat tipe fata sebuah value atau variabel
-- karena javasicript merupakan dynamic langauge jadi kadan kita perlu mengecek tipe data sebuah value atau variabel menguunakan operator type of
-- hasil dari operator type of adalah srting
+- operator `tipe of` merupakan _operator_ yang bisa kita gunakan untuk melihat `tipe data` sebuah `value` atau `variabel`
+- karena javasicript merupakan _dynamic langauge_ jadi kadang kita perlu mengecek `tipe data` sebuah `value` atau `variabel` menguunakan operator `type of`
+- hasil dari operator `type of` adalah `srting`
 
 ```
  ____________________________________
@@ -783,11 +783,11 @@ console.log(typeData);
 
 - anda bisa rubadah `let data` dengan data apa yang mau anda cek
 
-OPERATOR IN
+**OPERATOR IN**
 
-- In operator adalah operator yang bisa dilakukan untuk mengecek apakah sebuah property ada di dalam object atau tidak
-- jika property tersebut ada di object , maka hasil nya `true` , sedangkan jika tidak , maka hasil nya `flase`
-- tidak hanya di object , In juga bisa di gunakan untuk mengecek `Array`
+- `In operator` adalah _operator_ yang bisa dilakukan untuk mengecek apakah sebuah _property ada di dalam object atau tidak_
+- jika property tersebut ada di `object` , maka hasil nya `true` , sedangkan jika tidak , maka hasil nya `flase`
+- tidak hanya di `object` , `In` juga bisa di gunakan untuk mengecek `Array`
 
   - contoh
 
