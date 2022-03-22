@@ -927,3 +927,45 @@ console.log( county );
 ```
 
 **FALSY & RTUETY**
+
+- **FALSY**
+  - Falsy atau kadang di tulis `falsey` , adalah `value` yang ketika dalam konteks `boolean` , dia di anggap `false`
+  - ini adalah salah satu fiture unik dari javaScript , yang berguna namun kadang juga sering membinggungkan
+  - jadi di javaScript , kondisi itu tidak hanya bisa `boolean` , tapi `diluar boolean` pun bisa , namun kita harus tahu berapa data `falsy` , atau di `anggap false`
+  - **_data falsy_**
+
+```
+_____________________________________________________________
+| data di anggap falsy |   keterangan                       |
+_____________________________________________________________
+| fase                 | bolean fallse                      |
+| 0, -0                |  Number 0 & -0 di anggap false     |
+|  "" ,'',``           | semua sring kosong di anggap false |
+| null                 | null di anggap false               |
+| undefined            | undefined di anggap false          |
+| NaN                  | Not a Number di anggap false       |
+_____________________________________________________________
+
+```
+
+- **TRUTY**
+  - Truty adalah kebalikkan dari `falsy` , dimana `data` nya di anggap bernilai `true`
+  - Sederhana sekali sebenarnya untuk mengetahui sebuah data adalah `truty` , ya itu data yang bukan berniali `falsy`
+  - atau dalam kata lain semua data di luar tabel di atas adalah `truthy`
+
+_code untuk cek sebuah data ada atau tidak_
+
+```
+const data = "";
+ if ( data ){
+   console.log("true");
+ }else{
+   console.log("false");
+ }
+
+```
+
+**OPERATOR LOGIKA NON BOOLEAN**
+
+- sebelumnya kita tau bahwa operator logika `AND(&&)` _dan_ `OR (||)` digunkan untuk dua data `boolean`
+- Namu berbeda di `JavaScript` , kita bisa menggunakan operator **_logika_** `AND` dan `OR` untuk `tipe data non bolean`

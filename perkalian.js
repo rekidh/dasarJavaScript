@@ -87,7 +87,7 @@ const orang= {
 console.log(orang.tinggi)
 
 const orangg= ["kek"," jln. mada",25,'']
-orang[3]==null ? console.log('benar'): console.log('salah')
+// orang[3]==null ? console.log('benar'): console.log('salah')
 
   let nilai = "A"
 
@@ -102,3 +102,6 @@ orang[3]==null ? console.log('benar'): console.log('salah')
   default :
     document.innerHTML="nilai tidak ada";
   }
+
+  // console.log(Boolean(0))
+
