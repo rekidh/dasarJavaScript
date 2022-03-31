@@ -951,9 +951,8 @@ _____________________________________________________________
 - **TRUTY**
   - Truty adalah kebalikkan dari `falsy` , dimana `data` nya di anggap bernilai `true`
   - Sederhana sekali sebenarnya untuk mengetahui sebuah data adalah `truty` , ya itu data yang bukan berniali `falsy`
-  - atau dalam kata lain semua data di luar tabel di atas adalah `truthy`
-
-_code untuk cek sebuah data ada atau tidak_
+  - atau dalam kata lain semua data di luar tabel di atas adalah `truthy
+    _code untuk cek sebuah data ada atau tidak_
 
 ```
 const data = "";
@@ -969,3 +968,114 @@ const data = "";
 
 - sebelumnya kita tau bahwa operator logika `AND(&&)` _dan_ `OR (||)` digunkan untuk dua data `boolean`
 - Namu berbeda di `JavaScript` , kita bisa menggunakan operator **_logika_** `AND` dan `OR` untuk `tipe data non bolean`
+
+- **Operator OR (||) di Non Boolean**
+
+  - Operator logika `OR(||)`, membaca dari kiri kekanan
+  - Operator ini akan mengambil `nilai pertama` yang `truty`
+  - Jika `tidak ada satupun` yang bernilai `truty` maka yang terakhir `yang akan di ambil/kanan `
+
+  ```
+  console.log("hello"||"")            //hello
+  console.log(""||[])                 // []
+  console.log("0"||"NOL")             // 0
+  console.log( 0||"NOL")              // NOL
+  console.log(null||"NUL")            // NULL
+  console.log(undefined||"UNDEFINED") //UNDEFINED
+  console.log(0||false)               // false
+  ```
+
+  _contoh kasusu_
+
+```
+const person = {
+    firstName: "",
+    lastName : "Suryo"
+};
+
+const name = person.firstName || person.lastName;
+
+console.log(name);      // Suryo
+
+// catatan jika firstName ada dia akan mengambil nilai itu
+```
+
+- **Operator AND (&&) di Non Boolean**
+  - Operator `logika AND (&&)` , membaca dari kiri ke kanan.
+  - Operator ini akan mengambil `nilai` pertama yang `falsy`
+  - Jika tidak ada satupun yang bernilai `falsy` yang terakhir yang akan di ambil
+  - kode Operator AND(&&)
+
+```
+console.log("hello" && ' ')   // ' '
+console.log(" " && [])        //""
+console.log("0" && "NOL")     //"NOL"
+console.log( 0 && "NOL")      // 0
+console.log( null && "null")  //"nul"
+console.log(undefined && "UNDEFINED") //undefined
+console.log("undefined" && "nul")   //"null"
+```
+
+**PERULANGAN**
+
+**FOR LOOP**
+
+- for adalah salah satu kata kunci yang bisa digunakan unruk melakukan perulangan
+- block kode yang terdapat di dalam for akan selalu di ulangi selama kondisi for terpenuhi
+
+- **sintak perulangan for**
+
+```
+for(init statement ; kondisi ; post statement){
+  // block perulangan
+}
+```
+
+- init statement akan dieksekusi sekali di awal sebelum perulangan
+- kondisi akan dilakukan pengecekan dalam setiap perulangan , jika `true` perulangan akan di lakukan, jika `false` perulangan akan behenti
+- `post statement` akan dieksekusi setiap perulangan
+- `init statement` ,`kondisi` dan `post statement` tidak wajib di isi , jika kondisi tidak di isi , berati kondisi selalu `true` yang artinya akan `memasuki infinity loop` yang sebenarnya harus di hindari
+
+**_perulangan tampa henti_**
+
+```
+for( ; ; ){
+  alert("tidak akan berhenti");
+}
+```
+
+**_perulangan dengan kondisi_**
+
+- jika teman teman tidak ingin `loop` masuk ke kondisi `infinity loop` pastikan pada suatu saat kondisi bernilai `false`
+
+```
+let counter =  1 ;
+for ( ; counter<=10;){    //<= condisi
+  document.writeln('<p>perulangan ke ${counter}</p>)
+
+  counter++     // ingcrement
+}
+```
+
+**_perulangan dengan init statement_**
+
+```
+for (let counter =  1 ; counter<=10; counter++){
+  document.writeln('<p>perulangan ke ${counter}</p>)
+}
+```
+
+**WHILE LOOP**
+
+- while loop adalah versi `perulangan` yang `sederhana` di bandingin `for loop`
+- whiel loop , hanya terdapat kondisi perulangan , tanpa ada `init statement` dan `post statement`
+- **_perulangan while loop_**
+  - gunkan `while loop` jika hanya membukukan kondisi nya saja tampa ada `init statement` dan `post statement`
+
+```
+let counter =  1 ;
+while( counter<=10;counter++){
+  document.writeln('<p>perulangan ke ${counter}</p>)
+  counter++
+}
+```

@@ -42,35 +42,33 @@
   // function untuk box move
 card.addEventListener("click",()=>{
   id = setInterval(frames,50)
-  i =0
-  a=0
+  kiri =0
+  atas = 0
+  counter = 0
   function frames(){
-    if(i>=220){return false}
-    // if(id!=true){return false}
-    if(i<=70){
-      i++
-      card.style.left=i+'px',console.log(i,"kanan")
-    }else if(i>=70){
-      if(i==400){
-        clearInterval(id)
-        console.log(a,i,id,"paling dalam")
-        i=false,a=false
-      } 
-      }else if(a<400){
-        // clearInterval(id)
-        // a=129
-        i--
-        console.log(i,"kiri")
-        card.style.right=-i+"px"
+    if(kiri<=70 && atas !=140){
+      if (counter ==0){
+        kiri++
       }
-      // i++
-      a++
-      card.style.top=-a+"px"
-      console.log(i,"atas")
-      // return false
-    console.log(arr,id,i,"luar",a)
+      card.style.left=kiri+'px'
+    }else if(kiri>=70 && atas !=140){
+      atas++
+      card.style.top=-atas+'px'
+      counter=1
+      }else if(kiri > 0){
+        kiri--
+        card.style.left=kiri+"px"
+      }else if(counter<30){
+      counter++
+      atas--
+      card.style.top=-atas+'px'
+      console.log("else",kiri,counter,atas)
+    }
+    return
   }
 })
+
+
 let result = 1+2 ;// 3
 document.writeln("<h1> 1+2 = "+result+"</h1>");
 let originalResult= result;
@@ -105,3 +103,18 @@ const orangg= ["kek"," jln. mada",25,'']
 
   // console.log(Boolean(0))
 
+  const person = {
+    firsName : "",
+    lastName : "suryo"
+  }
+
+  const nam = person.firsName || person.lastName
+
+  console.log(nam)
+  
+
+
+fetch("http://128.199.200.155/data.php?user=credit", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
