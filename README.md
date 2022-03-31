@@ -1051,7 +1051,7 @@ for( ; ; ){
 ```
 let counter =  1 ;
 for ( ; counter<=10;){    //<= condisi
-  document.writeln('<p>perulangan ke ${counter}</p>)
+  document.writeln(`<p>perulangan ke ${counter}</p>`)
 
   counter++     // ingcrement
 }
@@ -1061,7 +1061,7 @@ for ( ; counter<=10;){    //<= condisi
 
 ```
 for (let counter =  1 ; counter<=10; counter++){
-  document.writeln('<p>perulangan ke ${counter}</p>)
+  document.writeln(`<p>perulangan ke ${counter}</p>`)
 }
 ```
 
@@ -1075,7 +1075,132 @@ for (let counter =  1 ; counter<=10; counter++){
 ```
 let counter =  1 ;
 while( counter<=10;counter++){
-  document.writeln('<p>perulangan ke ${counter}</p>)
+  document.writeln(`<p>perulangan ke ${counter}</p>`)
   counter++
 }
+```
+
+**DO WHILE LOOP**
+
+- do while adalah perulangan yang mirip dengan while
+- `perbedaannya` hanya ada pada pengecekan kondisi
+- pengecekan kondisi di `while loop` di lakukan di awal sebelum perulangan di lakukan , sedankan di `do while loop` di lakukan setelah perulangan di lakukan
+- oleh karena itu dalam `do while loop` , `minimal` sekali perlangan pasti di lakukan walaupun kondisi nya tidak bernilai `true`
+- apaka ada kondi yang seperti ini? tentu ada semisal `menu` , sebelum `user` memilih menu apa yang akan di tampikan menu utama akan tampil terlebih dahulu
+
+- **_Do while loop Code_**
+
+```
+let counter = 1 ;     // counter nya
+
+do {      //<= perulangan nya
+  document.writeln(`<p>perulangan ke ${counter}</p>`)
+}
+
+while( counter <= 10 )    // kondisi nya
+```
+
+**BREAK DAN CONTINUE**
+
+- pada switch statement , kita sudah mengenal kata kunci break, ya itu untuk menghentikan case dalam switch
+- sama dengan pada peerulangan , break juga di gunkan untuk menghentikan seluruh perulangan
+- namun berbeda dengan continue, continue digunakan untuk menghentikan perulangan saat ini lalu melanjukan ke perulangna berikutnya
+- **_Break Code_**
+
+```
+let counter = 1 ;
+
+while(true){
+  document.writeln(`<p>perulangan ke ${counter}</p>`)
+  counter++;
+
+  if(counter>10){
+    break;
+  }
+}
+
+```
+
+- **_Continue Code_**
+
+```
+for(leti=1;i<=100; i++){
+
+  if(i%2==0){
+    continue;
+  }
+
+  doncument.writeln(`<p>perulangan ganjil ${i}</p>`)
+}
+
+```
+
+**LABEL**
+
+- label merupakan penanda yang bisa di gunakan dengan kata kunci break dan countinue
+- secara defautl saat kita melakukan brak atau continue, dia akan melakukan terhadap perulangan dimana kode break dan countinue itu di gunakan
+- dengan menggunkan label kita bisa melakaukan break dan countinue terhadap perulangan yang kita ingin kan, asalakan pada perulangan nya kita gunakan label
+- untuk membuat label , kita bisa menggunkan nama label lalu di ikuti dengan : (titik dua)
+- **_label code_**
+
+```
+loopPertama:
+for(let i = 0: i<100; i++){
+
+  loopKedua:
+  for(let j = 0; j <10;j++){
+    console.log(`${i}-${j}`);
+  }
+
+}
+```
+
+- **_countinue atau break di label_**
+
+```
+loopPertama:
+for(let i = 0: i<10; i++){
+
+  loopKedua:
+    for(let j = 0; j <100;j++){
+
+      if(j>10){
+        countinue loopPertama;
+      }
+
+        console.log(`${i}-${j}`);
+    }
+
+}
+```
+
+**FOR IN**
+
+- `For In` merupakan perulangan `for` yang di gunkan untuk mengiterasi seluruh `data proprty di object` atau `index array`
+- walaupun `for in` bisa di gunkan untuk `array` , namun tidak di recomendasikan untuk `array` , karena biasanya kita jarang sekali biat `data index` untuk `array` , kita bisa menggunkan `for of`
+
+- **_for in di object_**
+
+```
+const person ={
+  firstName: " dayat",
+  middleName:"cahyo",
+  lastName:" gumalan"
+};
+
+for(const property in person){
+  document.writln(`<p>Property ${property} : ${person[property]}</p>`)
+}
+
+```
+
+- **_for in di array_**
+
+```
+const names =[" dayat","cahyo"," gumalan"]
+
+for(const index in name){
+  document.writln(`<p>${index} : ${names[index]}</p>`)
+}
+
 ```

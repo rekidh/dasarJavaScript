@@ -114,7 +114,31 @@ const orangg= ["kek"," jln. mada",25,'']
   
 
 
-fetch("http://128.199.200.155/data.php?user=credit", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+// fetch("http://128.199.200.155/data.php?user=credit", requestOptions)
+//   .then(response => response.text())
+//   .then(result => console.log(result))
+//   .catch(error => console.log('error', error));
+
+
+
+  const diri =[ 
+   {
+  firstName: " dayat",
+  middleName:"A",
+  lastName:" gumalan"
+    },
+   {
+  firstName: " dayat",
+  middleName:"B",
+  lastName:" gumalan"
+    },
+   {
+  firstName: " dayat ",
+  middleName:"C",
+  lastName:" gumalan"
+    }
+  ];
+
+for(const index in diri){
+  console.log(` ${index} : ${diri[index]}`)
+}
