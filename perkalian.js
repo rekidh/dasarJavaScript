@@ -22,20 +22,27 @@
 
   // Function untuk operasi matetematika
   submit.addEventListener('click',function(){
-    let from1 = document.getElementById('from1').value;
-    let from2 = document.getElementById('from2').value;
+    let from1 = parseInt(document.getElementById('from1').value);
+    let from2 = parseInt(document.getElementById('from2').value);
     let result = document.getElementById('result');
-    i=operator.innerText
-    a=operanSelect[arr-1]
-    
-    if(i!=a){ 
-      hasil=from1*from2
-      console.log("t")
-    }if(i==a){
-      console.log("sama")
+    let nilai =operator.innerHTML
+    let hasil ;
+    switch(nilai){
+    case "x":
+      hasil= from1*from2
+        break;
+    case ":":
+      hasil= from1/from2
+        break;
+    case "+":
+      hasil= from1+from2
+      break;
+    case "-":
+      hasil= from1-from2
+        break;
     }
-    !hasil ?  result.innerHTML="masukan angka":result.innerHTML=hasil
-    console.log(from1,from2,i,a,arr)
+    hasil=NaN?"masukan angka": true
+    result.innerHTML=hasil 
   })
 
 
@@ -121,24 +128,26 @@ const orangg= ["kek"," jln. mada",25,'']
 
 
 
-  const diri =[ 
-   {
-  firstName: " dayat",
-  middleName:"A",
-  lastName:" gumalan"
-    },
-   {
-  firstName: " dayat",
-  middleName:"B",
-  lastName:" gumalan"
-    },
-   {
-  firstName: " dayat ",
-  middleName:"C",
-  lastName:" gumalan"
-    }
-  ];
+  const diri =["relo","koko","oo"]
+;
 
-for(const index in diri){
-  console.log(` ${index} : ${diri[index]}`)
+for(const index of diri){
+  console.log(` 
+  get property ${index}
+  get vale ${diri[index]}`)
 }
+
+
+let myStr = "Bob";
+myStr[0] == "G";
+
+console.log(myStr+myStr[0])
+
+const kumpulanNama = {
+  ma:"tr",
+  t:"r"
+};
+
+   for (const nama of kumpulanNama){
+     console.log(`nama saya : ${nama}`);
+   }

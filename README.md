@@ -1192,6 +1192,15 @@ for(const property in person){
   document.writln(`<p>Property ${property} : ${person[property]}</p>`)
 }
 
+/*
+for(const index in diri){
+  console.log(`
+  get property ${index}
+  get vale ${diri[index]}`)
+}
+*/
+
+
 ```
 
 - **_for in di array_**
@@ -1204,3 +1213,65 @@ for(const index in name){
 }
 
 ```
+
+**FOR OF**
+
+- jika For In di gunakan untk melakukan iterasi property atau index , berbeda dengan For Of , ini di gunankan untuk melakukann iterasi terhadap isi value dari iterabel object , seperty array , string dan lain- lain
+- For Of tidak di gukankan untuk malakukan iterasi data di Object , karena Object bukanlah iterable (bisa diubah)
+
+- Code for of
+  - di gunakan untuk langsung mendapatkan value nya bukan nomor indexnya
+
+```
+const kumpulanNama = [ "eko","yayat","heram","jono"]
+
+   for (const nama of kumpulanNama){
+     console.log(`nama saya : ${nama}`)
+   }
+
+// iterasi karakter
+
+const namaLengkap = "reki desma haldi";
+
+for (const karakter of namaLengkap){
+  console.log(karakter);
+}
+
+```
+
+**WIHT STATEMENT**
+
+- With statement merupakan fitur yang digukan untuk menurunkan sebuah scope data
+- dengan menggunkan with statement , kita bisa mengakses property dalam sebuah data tampa harus menyerbutkan datanya
+
+- tanpa with statement
+
+```
+const person = {
+  firstName: "reki",
+  middleName:"desma",
+  lastName: "haldi"
+}
+console.log(person.firstName)
+console.log(person.middleName)
+console.log(person.lastName)
+```
+
+- dengan with statement
+
+```
+const person = {
+  firstName: "reki",
+  middleName:"desma",
+  lastName: "haldi"
+}
+
+with(person){
+    console.log(firstName)
+    console.log(middleName)
+    console.log(lastName)
+}
+
+```
+
+- **_warning_** : **with statemen tidak lagi di rekomendasikan oleh para komunitas programer karna membuar kode menjadi ambigu**
