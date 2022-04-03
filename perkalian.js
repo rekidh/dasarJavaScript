@@ -142,12 +142,3 @@ let myStr = "Bob";
 myStr[0] == "G";
 
 console.log(myStr+myStr[0])
-
-const kumpulanNama = {
-  ma:"tr",
-  t:"r"
-};
-
-   for (const nama of kumpulanNama){
-     console.log(`nama saya : ${nama}`);
-   }

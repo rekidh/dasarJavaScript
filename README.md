@@ -1274,4 +1274,49 @@ with(person){
 
 ```
 
-- **_warning_** : **with statemen tidak lagi di rekomendasikan oleh para komunitas programer karna membuar kode menjadi ambigu**
+- **_warning_** : _with statemen tidak lagi di rekomendasikan oleh para komunitas programer karna membuar kode menjadi ambigu_
+
+**FUNCTION**
+
+- Function adalaj block kode program yang akan berjalan saat kita pangil
+- Sebelum kita sudah menggunkan function `wrtiln()` untuk menampikan tulisan di HTML
+- Untuk membuat function , kita bisa menggunakan kata kunci `function` lalu di ikuti dengan `nama` function nya, kurung`()`dan di akhiri denagan dengan block `{ }`
+- Kita bisa memangil function dengan cara mangil nama function dan di ikuti dengan tanda`()` `asahPisau()`
+- di bahasa pemrograman lain function juga di sebut dengan `method`
+  - funtion code
+
+```
+//membuat function
+
+funtion sayHello(){
+
+  console.log("hello my name radi")
+}
+
+//memangil function
+
+sayHello();
+sayHello(); //boleh berkali-kali
+```
+
+**function parameter**
+
+- kita bisa mengirim informasi ke function yang ingin kita pagil (atau mengirim data)
+- untuk melakukan hal tersebut , kita perlu menambahkan parameter atau argument di function yang sudah kita buat
+- paramete di tempatkan di dalam kurung `()` di deklarasi method
+- parameter bisa lebih dari satu , jika lebuh dari satu, bisa di pisahkan dengan tanda `,` di antara parameternya.
+  - _funtion parameter_
+
+```
+//membuat function dengan parameter
+
+funtion sayHello(firstName, lastName){
+
+  console.log("hello my name ${firsName} dan nama belakang saya ${lastName}")
+}
+
+//memangil function parameter
+
+sayHello("reki", "desma Haldi");
+
+```
