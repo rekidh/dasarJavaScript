@@ -1320,3 +1320,90 @@ funtion sayHello(firstName, lastName){
 sayHello("reki", "desma Haldi");
 
 ```
+
+**function retrun value**
+
+- secara default function tidak menghasilkan value apapu , namun jika kita ingin , kita bisa membuat sebuah function mengembalikan value
+- agar function bisa menghasilkan value , kita bisa menggunakan kata kunci `return` di dalama function nya
+- dan di dalam block function , untuk menghasilkan nilai tersebut kita harus menggunakan kata kunci `return` , lalu diikuti dengan data yang ingin kita hasilkan .
+- Function hanya bisa mengembalikan satu data, kita kita ingin mengembalikan beberapa data sekaligus , kita bisa menggunkan array sebagai return value nya
+- Function return value code
+
+```
+//membuat function dengan parameter dan return value
+
+funtion sayHello(firstName, lastName){
+    const say = `hello ${firstName} ${lastName}
+    return say
+}
+
+//memangil function dan menangkap return valuenya
+
+const result = sayHello("reki", "desma Haldi");
+
+console.log(result)
+```
+
+- Function return value lebih dari satu value
+
+```
+function getFinalScore(value){
+  if(value > 90){
+    retun "A";
+  }if else(value > 80){
+    retun "B";
+  }if else(value > 70){
+    retun "C";
+  }if else(value > 60){
+    retun "D";
+  }else{
+    return "E";
+  }
+}
+
+const finalValue = getFinalScore(88)
+console.log(finalValue)
+```
+
+- _menghentikan eksekusi program dengan **return**_
+
+  - saat kita menggunakan kata kunci return , maka kode setelah return tidak akan di exsekusi
+  - kita bisa menggunakan retutn untuk menhentikan eksekusi sebuah function
+
+- menghentiakan eksekusi dengan return
+
+```
+function isContains(array,searchValue){
+  for(const element of array){
+
+    console.log(`iterasi ${element}`)
+
+    if(element === searchValue ){
+      return true;
+    }
+  }
+  return false
+}
+const array = [1,2,3,4,5,6,7,8,9,10];
+const search = 43;
+const found = isContains(array,search);
+
+document.writeln(`<p>${found}</p>`);
+```
+
+**Opsional Parameter**
+
+- secara default , parameter di function itu optional
+- artinya kita tidak wajib mengisi value nya ketika memangil function
+- jika tida ada value yang kita kirim ke parameter ketika memangila function , maka secara otomatis parameter tersebut bernilai undefined
+- optional parameter
+
+```
+function sayHello(firstName, middleName, lastName){
+  console.log(fristName);
+  console.log(middleName);
+  console.log(lastName);
+}
+
+sayHello("rahmad");
+```

@@ -25,7 +25,7 @@
     let from1 = parseInt(document.getElementById('from1').value);
     let from2 = parseInt(document.getElementById('from2').value);
     let result = document.getElementById('result');
-    let nilai =operator.innerHTML
+    let nilai ;
     let hasil ;
     switch(nilai){
     case "x":
@@ -48,6 +48,7 @@
 
   // function untuk box move
 card.addEventListener("click",()=>{
+
   id = setInterval(frames,50)
   kiri =0
   atas = 0
