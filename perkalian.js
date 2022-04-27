@@ -143,3 +143,31 @@ let myStr = "Bob";
 myStr[0] == "G";
 
 console.log(myStr+myStr[0])
+
+
+function nextInLine(arr, item) {
+
+  if(arr.length==0){
+    return item;
+  }
+  let removed = arr.shift();
+  arr.push(item);
+  return removed;
+  
+  // Only change code above this line
+}
+
+// Setu
+const testArr = [1,2,3,4,5];
+const testArr1 = [1];
+
+// testArr.push(6);
+// console.log(testArr.length)
+  // nextInLine(testArr,11);
+  // nextInLine(testArr,11);
+  let i =0;
+  while(i<10){
+    console.log(nextInLine(testArr,5+i) )
+    i++
+  }
+  
